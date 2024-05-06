@@ -14,6 +14,6 @@ setup("login", async ({ page, organizationPage, neetoPlaywrightUtilities }) => {
   await setup.step("Step 3: Login into the application", () =>
     login({ page, neetoPlaywrightUtilities })
   );
-
-  process.env.baseURL = `${process.env.baseURL}/admin`;
+  
+  process.env.baseURL = `${process.env.baseURL}/admin`
 });
